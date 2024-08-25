@@ -1,0 +1,28 @@
+{
+  "name": "git-mural",
+  "version": "1.0.0",
+  "description": "Generates an image of a users git history ",
+  "main": "git-mural.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bemky/git-mural.git"
+  },
+  "keywords": [
+    "git",
+    "activity",
+    "image",
+    "art"
+  ],
+  "author": "Ben Ehmke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bemky/git-mural/issues"
+  },
+  "homepage": "https://github.com/bemky/git-mural#readme",
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  }
+}

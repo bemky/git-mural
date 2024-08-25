@@ -1,0 +1,75 @@
+<html>
+<head>
+    <script type="module">
+        import GitMural from './git-mural.js';
+    </script>
+</head>
+<style>
+html,
+body{
+    background: white;
+    padding: 0;
+    margin: 0;
+    color: rgb(20,20,20);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;;
+}
+*{
+    box-sizing: border-box;
+}
+pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1em;
+    display: block;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid rgb(100,100,100);
+    background: rgb(240,240,240);
+    overflow-x: scroll;
+}
+git-mural {
+    display: grid;
+    grid-template-columns: repeat(54, 1em);
+    gap: 20px 3px;
+}
+year {
+    display: grid;
+    gap: 3px;
+    grid-column: -1 / 1;
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(7, 1em);
+}
+year-label {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    text-orientation: sideways-right;
+    writing-mode: vertical-lr;
+    color: hsl(130 50% 50%);
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+day {
+    background: hsl(0 0 90);
+    border-radius: 0.2em;
+}
+.intensity-2 {
+    background: hsl(130 64% 80%);
+}
+.intensity-3 {
+    background: hsl(130 55% 63%);
+}
+.intensity-4 {
+    background: hsl(130 50% 50%);
+}
+.intensity-5 {
+    background: hsl(130 35% 30%);
+}
+</style>
+<body>
+    <div class="container">
+        <git-mural src=""></git-mural>
+    </div>
+</div>
+</body>
+</html>
